@@ -1,0 +1,116 @@
+{
+  "name": "EDL Cyberpunk Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#0a0a0f",
+    "editor.foreground": "#e0e0ff",
+    "editorCursor.foreground": "#ff00ff",
+    "editor.lineHighlightBackground": "#1a1a2e",
+    "editor.selectionBackground": "#16213e",
+    "editorLineNumber.foreground": "#4a4a6a",
+    "editorLineNumber.activeForeground": "#00ffff",
+    "sideBar.background": "#0f0f1a",
+    "activityBar.background": "#0a0a0f",
+    "statusBar.background": "#1a1a2e",
+    "titleBar.activeBackground": "#0f0f1a"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": ["comment"],
+      "settings": {
+        "foreground": "#6a6a8a",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "EDL Keywords",
+      "scope": ["keyword.control.edl", "keyword.declaration.edl"],
+      "settings": {
+        "foreground": "#ff0080",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "EDL Modifiers",
+      "scope": ["keyword.modifier.edl"],
+      "settings": {
+        "foreground": "#00ff80",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "EDL Operators",
+      "scope": ["keyword.operator.event.edl"],
+      "settings": {
+        "foreground": "#00ffff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Standard Operators",
+      "scope": [
+        "keyword.operator.assignment.edl",
+        "keyword.operator.comparison.edl",
+        "keyword.operator.logical.edl",
+        "keyword.operator.arithmetic.edl"
+      ],
+      "settings": {
+        "foreground": "#ff8000"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": ["string.quoted"],
+      "settings": {
+        "foreground": "#80ff00"
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "#ff4080"
+      }
+    },
+    {
+      "name": "Functions",
+      "scope": ["entity.name.function.edl"],
+      "settings": {
+        "foreground": "#8080ff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Built-in Functions",
+      "scope": ["support.function.builtin.edl"],
+      "settings": {
+        "foreground": "#ff80ff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["storage.type"],
+      "settings": {
+        "foreground": "#40ff80",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Constants",
+      "scope": ["constant.language.edl", "variable.other.constant.edl"],
+      "settings": {
+        "foreground": "#ffff00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": ["variable.other.edl"],
+      "settings": {
+        "foreground": "#c0c0ff"
+      }
+    }
+  ]
+}

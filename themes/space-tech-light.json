@@ -1,0 +1,116 @@
+{
+  "name": "EDL Space Tech Light",
+  "type": "light",
+  "colors": {
+    "editor.background": "#f8f8ff",
+    "editor.foreground": "#2a2a4a",
+    "editorCursor.foreground": "#0066cc",
+    "editor.lineHighlightBackground": "#f0f0f8",
+    "editor.selectionBackground": "#d0d0e8",
+    "editorLineNumber.foreground": "#8a8aaa",
+    "editorLineNumber.activeForeground": "#0066cc",
+    "sideBar.background": "#f0f0f8",
+    "activityBar.background": "#e8e8f0",
+    "statusBar.background": "#d0d0e8",
+    "titleBar.activeBackground": "#f0f0f8"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": ["comment"],
+      "settings": {
+        "foreground": "#6a6a8a",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "EDL Keywords",
+      "scope": ["keyword.control.edl", "keyword.declaration.edl"],
+      "settings": {
+        "foreground": "#cc0066",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "EDL Modifiers",
+      "scope": ["keyword.modifier.edl"],
+      "settings": {
+        "foreground": "#006633",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "EDL Operators",
+      "scope": ["keyword.operator.event.edl"],
+      "settings": {
+        "foreground": "#0066cc",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Standard Operators",
+      "scope": [
+        "keyword.operator.assignment.edl",
+        "keyword.operator.comparison.edl",
+        "keyword.operator.logical.edl",
+        "keyword.operator.arithmetic.edl"
+      ],
+      "settings": {
+        "foreground": "#cc6600"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": ["string.quoted"],
+      "settings": {
+        "foreground": "#009933"
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "#cc3366"
+      }
+    },
+    {
+      "name": "Functions",
+      "scope": ["entity.name.function.edl"],
+      "settings": {
+        "foreground": "#3366cc",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Built-in Functions",
+      "scope": ["support.function.builtin.edl"],
+      "settings": {
+        "foreground": "#9933cc",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["storage.type"],
+      "settings": {
+        "foreground": "#006666",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Constants",
+      "scope": ["constant.language.edl", "variable.other.constant.edl"],
+      "settings": {
+        "foreground": "#cc9900",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": ["variable.other.edl"],
+      "settings": {
+        "foreground": "#4a4a6a"
+      }
+    }
+  ]
+}

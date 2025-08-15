@@ -1,0 +1,98 @@
+{
+  "name": "edl-language-support",
+  "displayName": "EDL Language Support",
+  "description": "Advanced syntax highlighting, IntelliSense, and linting for EDL programming language",
+  "version": "1.0.0",
+  "publisher": "edl-dev",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes",
+    "Linters"
+  ],
+  "keywords": [
+    "edl",
+    "syntax highlighting",
+    "intellisense",
+    "linting",
+    "cyberpunk"
+  ],
+  "activationEvents": [
+    "onLanguage:edl"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "edl",
+        "aliases": [
+          "EDL",
+          "Event Description Language"
+        ],
+        "extensions": [
+          ".edl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "edl",
+        "scopeName": "source.edl",
+        "path": "./syntaxes/edl.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "EDL Cyberpunk Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cyberpunk-dark.json"
+      },
+      {
+        "label": "EDL Space Tech Light",
+        "uiTheme": "vs",
+        "path": "./themes/space-tech-light.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "EDL Language Support",
+      "properties": {
+        "edl.linting.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable real-time linting for EDL files"
+        },
+        "edl.intellisense.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable IntelliSense autocompletion"
+        },
+        "edl.theme.customColors": {
+          "type": "object",
+          "default": {},
+          "description": "Custom color overrides for EDL syntax highlighting"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "edl.validateFile",
+        "title": "Validate EDL File",
+        "category": "EDL"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "24.2.1",
+    "typescript": "^4.9.4"
+  }
+}
